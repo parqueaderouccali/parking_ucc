@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Able Pro Responsive Bootstrap 4 Admin Template by Phoenixcoded</title>
+		<title>Parking UCC</title>
 
-	 <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
-   	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  		<!--[if lt IE 9]>
-  			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  			<![endif]-->
-
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="description" content="Phoenixcoded">
-	<meta name="keywords"
-	content=", Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-	<meta name="author" content="Phoenixcoded">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>	
+		<meta name="keywords" content=", Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+		<meta name="author" content="facultad_ingenieria_ucc">
 
 	<!-- Favicon icon -->
-	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
 
 	<!-- Google font-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
 	<!--ico Fonts-->
-	<link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+	<link rel="stylesheet" type="text/css" href="../assets/icon/icofont/css/icofont.css">
 
     <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
 
 	<!-- Style.css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 
 	<!-- Responsive.css-->
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
 
 	<!--color css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/color/color-1.min.css" id="color"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/color/color-1.min.css" id="color"/>
 
 </head>
 <body>
@@ -51,51 +41,40 @@
 						<div class="login-card card-block bg-white">
 							<form class="md-float-material" action="index.html">
 								<div class="text-center">
-									<img src="assets/images/logo-blue.png" alt="logo">
+										<img src="../assets/images/logo-ucc.png" alt="logo">
 								</div>
-								<h3 class="text-center txt-primary">Create an account </h3>
+								<h3 class="text-center txt-primary">Crear Usuario </h3>
 								<div class="row">
 									<div class="col-md-6">
 											<div class="md-input-wrapper">
-												<input type="text" class="md-form-control" required="">
-												<label>First Name</label>
+												<input id="txt_primer_nombre" type="text" class="md-form-control" placeholder="Primer Nombre" required>											
 											</div>
 									</div>
 									<div class="col-md-6">
 											<div class="md-input-wrapper">
-												<input type="text" class="md-form-control" required="">
-												<label>Last Name</label>
+												<input id="txt_primer_apellido" type="text" class="md-form-control" placeholder="Primer Apellido" required>											
 											</div>
 									</div>
 								</div>
 									<div class="md-input-wrapper">
-										<input type="email" class="md-form-control" required="">
-										<label>Email Address</label>
+										<input id="txt_email_cuenta" type="email" class="md-form-control" placeholder="Email" required>
+										<label></label>
 									</div>
 									<div class="md-input-wrapper">
-										<input type="password" class="md-form-control" required="">
-										<label>Password</label>
+										<input id="txt_contraseña_cuenta" type="password" class="md-form-control" placeholder="Contraseña" required>
+				
 									</div>
 									<div class="md-input-wrapper">
-										<input type="password" class="md-form-control" required="">
-										<label>Confirm Password</label>
+										<input id="txt_confirmacion_contraseña_cuenta" type="password" class="md-form-control" placeholder="Confirmar Contraseña" required>										
 									</div>
-
-								<div class="rkmd-checkbox checkbox-rotate checkbox-ripple b-none m-b-20">
-									<label class="input-checkbox checkbox-primary">
-										<input type="checkbox" id="checkbox">
-										<span class="checkbox"></span>
-									</label>
-									<div class="captions">Remember Me</div>
-								</div>
+								
 								<div class="col-xs-10 offset-xs-1">
-								<button type="submit" class="btn btn-primary btn-md btn-block waves-effect waves-light m-b-20">Sign up
-								</button>
+								<button type="button" class="btn btn-primary btn-md btn-block waves-effect waves-light m-b-20" onclick="createuser()">Registrarse</button>
 								</div>
 									<div class="row">
 										<div class="col-xs-12 text-center">
-											<span class="text-muted">Already have an account?</span>
-											<a href="login1.html" class="f-w-600 p-l-5"> Sign In Here</a>
+											<span class="text-muted">Ya tiene una cuenta?</span>
+											<a href="../index.html" class="f-w-600 p-l-5"> Ingresar a Login</a>
 
 										</div>
 									</div>
@@ -158,15 +137,31 @@
 
 
 	<!-- Required Jqurey -->
-	<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-	<script src="assets/plugins/tether/dist/js/tether.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../assets/plugins/tether/dist/js/tether.min.js"></script>
 	<!-- Required Fremwork -->
-	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<!-- waves effects.js -->
-	<script src="assets/plugins/Waves/waves.min.js"></script>
+	<script src="../assets/plugins/Waves/waves.min.js"></script>
 	<!--text js-->
-	<script type="text/javascript" src="assets/pages/elements.js"></script>
+	<!-- Inicializacion Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyDRzqDtc6CpVItDGqxyFA8W0WxV1hkV18k",
+		authDomain: "parqueaderouccali-8a09c.firebaseapp.com",
+		databaseURL: "https://parqueaderouccali-8a09c.firebaseio.com",
+		projectId: "parqueaderouccali-8a09c",
+		storageBucket: "parqueaderouccali-8a09c.appspot.com",
+		messagingSenderId: "811609179419"
+	};
+	firebase.initializeApp(config);
+	</script>
+<!-- Custom js -->
 
+<script type="text/javascript" src="../assets/js/login/js_login.js"></script>
+<script type="text/javascript" src="../assets/pages/elements.js"></script>
 
 </body>
 </html>
