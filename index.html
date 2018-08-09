@@ -24,6 +24,7 @@
 
     <!-- Required Fremwork -->
 	<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/alertifyjs/css/alertify.min.css">
 
 	<!-- Style.css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -51,17 +52,17 @@
 						Login
 						</h3>
 						<div class="md-input-wrapper">
-							<input id="txt_email" type="email" class="md-form-control" placeholder="Email" required=""/>
+							<input id="txt_email" type="email" class="md-form-control" placeholder="Email" required/>
 						</div>
 						<div class="md-input-wrapper">
-							<input id="txt_password" type="password" class="md-form-control" placeholder="Contraseña" required=""/>
+							<input id="txt_password" type="password" class="md-form-control" placeholder="Contraseña" required/>
 						</div>
 						<div class="row">
 							<div class="col-sm-6 col-xs-12">
 							
 								</div>
 							<div class="col-sm-12 col-xs-12 text-center">
-								<a href="forgot-password.html" class="text-right f-w-600"> Recuperar Contraseña?</a>
+								<a href="" class="text-right f-w-600 openBtn" data-toggle="modal" data-target="#exampleModalCenter"> Recuperar Contraseña?</a>
 							</div>							
 						</div>
 						<br>
@@ -90,56 +91,38 @@
 	<!-- end of container-fluid -->
 </section>
 
-<!-- Warning Section Starts -->
-<!-- Older IE warning message -->
-<!--[if lt IE 9]>
-<div class="ie-warning">
-	<h1>Warning!!</h1>
-	<p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-	<div class="iew-container">
-		<ul class="iew-download">
-			<li>
-				<a href="http://www.google.com/chrome/">
-					<img src="assets/images/browser/chrome.png" alt="Chrome">
-					<div>Chrome</div>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.mozilla.org/en-US/firefox/new/">
-					<img src="assets/images/browser/firefox.png" alt="Firefox">
-					<div>Firefox</div>
-				</a>
-			</li>
-			<li>
-				<a href="http://www.opera.com">
-					<img src="assets/images/browser/opera.png" alt="Opera">
-					<div>Opera</div>
-				</a>
-			</li>
-			<li>
-				<a href="https://www.apple.com/safari/">
-					<img src="assets/images/browser/safari.png" alt="Safari">
-					<div>Safari</div>
-				</a>
-			</li>
-			<li>
-				<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-					<img src="assets/images/browser/ie.png" alt="">
-					<div>IE (9 & above)</div>
-				</a>
-			</li>
-		</ul>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Restablecer Contraseña</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="form-group">
+				<label for="" class="col-form-label"><b>Email:</b></label>
+				<input type="email" class="form-control" id="email-recuperacion" required>
+			  </div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+		  <button type="button" class="btn btn-primary" onclick="recordarPassword()">Enviar</button>
+		</div>
+	  </div>
 	</div>
-	<p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
-<!-- Warning Section Ends -->
+  </div>
+
+
 <!-- Required Jqurey -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/plugins/tether/dist/js/tether.min.js"></script>
 <!-- Required Fremwork -->
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/plugins/alertifyjs/alertify.min.js"></script>
 
 <!-- waves effects.js -->
 <script src="assets/plugins/Waves/waves.min.js"></script>

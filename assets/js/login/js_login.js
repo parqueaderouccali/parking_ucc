@@ -10,8 +10,6 @@ var getUser = function () {
     })
 }
 
-//getUser();
-
 var login = function () {
 
     var email = $('#txt_email').val();
@@ -25,3 +23,17 @@ var login = function () {
         console.log(error); 
     })
 }
+
+var recordarPassword = function () {
+
+    var auth = firebase.auth();
+    var email = $('#email-recuperacion').val();
+
+    auth.sendPasswordResetEmail(email)
+        .then(function(){
+            $('#exampleModalCenter').modal('hide');
+            alertify.success("El correo de confirmación fue enviado con éxito");
+        },function(error){
+            console.log(error)
+        })
+    }
