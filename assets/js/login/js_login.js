@@ -4,12 +4,8 @@ var getUser = function () {
         if(user){
             // $(location).attr('href','../mod_placas/form-placas.html');           
             // $('.correo').html(user.email)
-            // $('#login').hide();
-            // $('#login').hide();
         }else{
             // $(location).attr('href','../index.html');
-            $('#login_user').show();
-            $('#registro_user').hide();
         }
     })
 }

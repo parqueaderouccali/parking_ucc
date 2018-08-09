@@ -22,7 +22,7 @@ $(window).on('load', function() {
             type: type,
             allow_dismiss: false,
             label: 'Cancel',
-            className: 'btn-xs btn-inverse',
+            className: 'btn-xs btn-success',
             placement: {
                 from: 'bottom',
                 align: 'right'
@@ -39,7 +39,7 @@ $(window).on('load', function() {
         });
     };
 
-    notify('Welcome to Able Admin', 'inverse');
+    notify('Welcome to Able Admin', 'success');
     $('.loader-bg').fadeOut('slow');
 
 });

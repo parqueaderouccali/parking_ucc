@@ -5,7 +5,7 @@ var getUser = function () {
         if(user){                   
             $('.correo').html(user.email)
         }else{
-            // $(location).attr('href','../index.html');
+            $(location).attr('href','../index.html');
         }
     })
 }
