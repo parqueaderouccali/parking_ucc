@@ -17,7 +17,7 @@ var login = function () {
 
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then(function (data){                                  
-        $(location).attr('href','../mod_placas/form-placas.html');            
+        $(location).attr('href','../mod_usuario/form-usuarios.html');            
     })
     .catch(function (error) {        
         alertify.error(traductor(error.message));

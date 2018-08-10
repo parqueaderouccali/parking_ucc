@@ -10,6 +10,8 @@ var createuser = function () {
         alertify.error(("Ingrese su Nombre"));
     }else if(apellido === ""){
         alertify.error(("Ingrese su Apellido"));
+    }else if(email === ""){
+        alertify.error(("Ingrese su Email"));
     }else if(password === ""){        
         alertify.error(("Ingrese la contraseña"));
     }else if(password_2 === ""){        
