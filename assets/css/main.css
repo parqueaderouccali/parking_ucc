@@ -209,7 +209,7 @@ textarea {
     margin-bottom: 0; }
     .main-header .breadcrumb-title a {
       font-size: 16px;
-      color: #009688; }
+      color: #1B8BF9; }
     .main-header .breadcrumb-title .breadcrumb-item:last-child a {
       color: #7e7e7e; }
 
@@ -376,7 +376,7 @@ textarea {
         height: 48px;
         opacity: 1; }
         .materialSelect .md-select.isOpen li[data-selected] {
-          color: #009688; }
+          color: #1B8BF9; }
         .materialSelect .md-select.isOpen li:hover {
           background-color: #eeeeee; }
         .materialSelect .md-select.isOpen li:active {
@@ -485,7 +485,7 @@ textarea {
   display: table-cell; }
 
 .nav-tabs .slide {
-  background: #009688;
+  background: #1B8BF9;
   width: calc(100% / 4);
   height: 4px;
   position: absolute;
@@ -508,7 +508,7 @@ textarea {
   position: relative; }
   .md-tabs .nav-link {
     border: none;
-    color: #009688; }
+    color: #1B8BF9; }
     .md-tabs .nav-link:focus, .md-tabs .nav-link:hover {
       border: none; }
   .md-tabs .nav-item {
@@ -520,7 +520,7 @@ textarea {
     .md-tabs .nav-item + .nav-item {
       margin: 0; }
     .md-tabs .nav-item .nav-link.active, .md-tabs .nav-item .nav-link.active:focus, .md-tabs .nav-item .nav-link.active:hover {
-      color: #009688;
+      color: #1B8BF9;
       border: none;
       background-color: transparent;
       border-radius: 0; }
@@ -537,7 +537,7 @@ textarea {
       -ms-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; }
     .md-tabs .nav-item.open .nav-link, .md-tabs .nav-item.open:focus, .md-tabs .nav-item.open:hover {
-      color: #009688;
+      color: #1B8BF9;
       border: none;
       background-color: transparent;
       border-radius: 0; }
@@ -1335,7 +1335,7 @@ Basic card CSS
     font-size: 25px;
     font-weight: 400;
     font-size: center;
-    color: #009688; }
+    color: #1B8BF9; }
   .login-card i {
     color: #777; }
   .login-card .md-input-wrapper {
@@ -1457,7 +1457,7 @@ Basic card CSS
 ==========================  **/
 .sign-in-up {
   display: flex;
-  background-color: #009688; }
+  background-color: #1B8BF9; }
 
 .sign-in-up-left {
   width: 40%;
@@ -1841,7 +1841,7 @@ tr:first-child > td > .fc-day-grid-event {
   background-color: #fff; }
 
 .fc-state-active {
-  background-color: #009688;
+  background-color: #1B8BF9;
   color: #fff; }
 
 .fc-toolbar {
@@ -1955,7 +1955,7 @@ input[type=text].md-form-control {
 .md-form-control:focus ~ .md-line:after,
 .md-form-control:focus ~ .md-line:before {
   width: 100%;
-  background: #009688; }
+  background: #1B8BF9; }
 
 .md-form-control .md-line:before {
   left: 50%; }
@@ -1971,7 +1971,7 @@ input[type=text].md-form-control {
 .md-valid ~ label {
   top: -6px;
   font-size: 13px;
-  color: #009688; }
+  color: #1B8BF9; }
 
 .md-label-file {
   position: absolute;
@@ -2031,19 +2031,19 @@ input[type=text].md-form-control {
 
 /*Primary labels*/
 .md-input-primary .md-form-control {
-  border-color: #009688 !important; }
+  border-color: #1B8BF9 !important; }
 
 .md-form-control:focus ~ .md-line:before,
 .md-input-primary .md-form-control:focus ~ .md-line:after,
 .md-input-primary .md-form-control:focus ~ .md-line:before,
 .md-input-primary .md-line:after,
 .md-input-primary .md-line:before {
-  background: #009688; }
+  background: #1B8BF9; }
 
 .md-input-primary .md-form-control:focus ~ label,
 .md-input-primary > label,
 .md-valid ~ label {
-  color: #009688; }
+  color: #1B8BF9; }
 
 /*Success labels*/
 .md-input-success .md-form-control {
@@ -2120,7 +2120,7 @@ input[type=text].md-form-control {
     width: 0;
     bottom: 0;
     position: absolute;
-    background: #009688;
+    background: #1B8BF9;
     -webkit-transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -ms-transition: 0.2s ease all;
@@ -2131,7 +2131,7 @@ input[type=text].md-form-control {
     right: 50%; }
 
 .bar-focus {
-  border-bottom: 2px solid #009688; }
+  border-bottom: 2px solid #1B8BF9; }
   .bar-focus:after, .bar-focus:before {
     display: none; }
 
@@ -2605,7 +2605,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-    background-color: #009688;
+    background-color: #1B8BF9;
     border-color: #337ab7; }
   .radio .helper::after, .radio .helper::before {
     content: '';
@@ -2621,21 +2621,21 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     border-radius: 50%;
     border: 0.125rem solid currentColor; }
 .radio label:hover .helper {
-  color: #009688; }
+  color: #1B8BF9; }
 .radio input:checked ~ .helper::after {
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5); }
 .radio input:checked ~ .helper::before {
-  color: #009688; }
+  color: #1B8BF9; }
 .radio.radiofill input:checked ~ .helper::after {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1); }
 .radio.radiofill .helper::after {
-  background-color: #009688; }
+  background-color: #1B8BF9; }
 
 .radio-inline {
   display: inline-block;
@@ -2752,7 +2752,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
   align-items: center; }
 
 .invoice-box {
-  background: #009688;
+  background: #1B8BF9;
   color: #fff;
   padding: 20px 0;
   display: flex;
@@ -2907,7 +2907,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     text-align: center; }
 
 .media .b-2-primary {
-  border: 2px solid #009688; }
+  border: 2px solid #1B8BF9; }
 
 /**====== Task Detailed css end ======**/
 /**  =====================
@@ -3006,7 +3006,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     Counter css start
 ======================= */
 .counter p {
-  color: #009688; }
+  color: #1B8BF9; }
 
 .comming-soon-from input {
   width: 50%; }
@@ -4588,7 +4588,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
   margin-bottom: 10px; }
 .card-member .ui-state-active,
 .card-questioning .ui-state-active {
-  background-color: #009688;
+  background-color: #1B8BF9;
   color: #fff; }
 
 #placeholder3 .legend {
@@ -6080,7 +6080,7 @@ svg#sun {
 
 /* === color css starts=== */
 .color-1 {
-  background: #009688; }
+  background: #1B8BF9; }
 
 .color-2 {
   background: #f57c00; }
@@ -6128,7 +6128,7 @@ svg#sun {
     -ms-transition: all ease-in 0.3s;
     transition: all ease-in 0.3s; }
     .color-picker a.handle:hover {
-      background: #009688;
+      background: #1B8BF9;
       -webkit-transition: all ease-in 0.3s;
       -moz-transition: all ease-in 0.3s;
       -ms-transition: all ease-in 0.3s;
@@ -6140,11 +6140,11 @@ svg#sun {
         -ms-transition: all ease-in 0.3s;
         transition: all ease-in 0.3s; }
     .color-picker a.handle i {
-      color: #009688;
+      color: #1B8BF9;
       font-size: 25px;
       line-height: 50px; }
   .color-picker .settings-header {
-    background: #009688;
+    background: #1B8BF9;
     height: 50px;
     padding: 15px 34px 0 34px; }
     .color-picker .settings-header h3 {

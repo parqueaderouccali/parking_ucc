@@ -1,3 +1,4 @@
+// inspecciona si un usuario esta logeado o no
 var getUser = function () {
 
     firebase.auth().onAuthStateChanged(function(user){
@@ -10,6 +11,7 @@ var getUser = function () {
     })
 }
 
+// permite validar un usuario para logearse a la aplicación
 var login = function () {
 
     var email = $('#txt_email').val();
@@ -17,13 +19,14 @@ var login = function () {
 
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then(function (data){                                  
-        $(location).attr('href','../mod_usuario/form-usuarios.html');            
+        $(location).attr('href','../mod_usuario/form-usuarios.html')         
     })
     .catch(function (error) {        
         alertify.error(traductor(error.message));
     })
 }
 
+// envia un correo para cambiar la contraseña
 var recordarPassword = function () {
 
     var auth = firebase.auth();
@@ -38,6 +41,7 @@ var recordarPassword = function () {
         })
     }
 
+// retorna en idioma español algunos error presentados por el sistema
 var traductor = function (texto){
     
     var texto_traducido;

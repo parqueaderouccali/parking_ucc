@@ -1,3 +1,4 @@
+// crea un usuario en autenticacion
 var createuser = function () {
 
     var nombre = $('#txt_primer_nombre').val();
@@ -25,6 +26,7 @@ var createuser = function () {
             sendEmail();      
         })
         .catch(function (error) {
+            console.log(error)
             alertify.error(traductor(error.message));
         })
     getUser();
@@ -34,6 +36,7 @@ var createuser = function () {
 
 }
 
+// envia un mensaje para confirmar la creacion del usuario
 var sendEmail = function () {
 
     var user = firebase.auth().currentUser;
@@ -47,12 +50,14 @@ var sendEmail = function () {
 
 }
 
+// inspecciona si un usuario esta logeado o no
 var getUser = function () {
     firebase.auth().onAuthStateChanged(function (user) {
         console.log(user)
     })
 }
 
+// crea un usuario en base de datos
 var guardarUsuariofirebase = function (name, surnames, email) {
     var db = firebase.database().ref('usuarios/');
     var user = firebase.auth().currentUser;
@@ -67,15 +72,7 @@ var guardarUsuariofirebase = function (name, surnames, email) {
         db.push().set(usuarios);
 }
 
-var limpiarCampos = function () {
-
-    $('#txt_primer_nombre').val('');
-    $('#txt_primer_apellido').val('');
-    $('#txt_email_cuenta').val('');
-    $('#txt_contraseña_cuenta').val('');
-    $('#txt_confirmacion_contraseña_cuenta').val('');
-}
-
+// retorna en idioma español algunos error presentados por el sistema
 var traductor = function (texto){
     
     var texto_traducido;
@@ -86,9 +83,25 @@ var traductor = function (texto){
         texto_traducido = "La contraseña no es válida.";
     }else if(texto === "There is no user record corresponding to this identifier. The user may have been deleted."){
         texto_traducido = "El Usuario no es existe.";
+    }else if(texto === "The email address is already in use by another account."){
+        texto_traducido = "Este Correo ya se encuentra registrado";
+    }else if(texto === "Password should be at least 6 characters"){
+        texto_traducido = "El pasword debe tener minimo 6 caracteres"
     }
 
     return texto_traducido;
 }
+
+// permite limpiar los campos cuando se registra un usuario
+var limpiarCampos = function () {
+
+    $('#txt_primer_nombre').val('');
+    $('#txt_primer_apellido').val('');
+    $('#txt_email_cuenta').val('');
+    $('#txt_contraseña_cuenta').val('');
+    $('#txt_confirmacion_contraseña_cuenta').val('');
+}
+
+
 
 
